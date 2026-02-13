@@ -1,10 +1,12 @@
 let numeroSecreto = Math.floor(Math.random() * 200) + 1;
 
-function adivinar(numeroUsuario) {
+function adivinar() {
+
+    let numeroUsuario = Number(document.getElementById("numeroUsuario").value);
     let diferencia = Math.abs(numeroSecreto - numeroUsuario);
 
     if (diferencia === 0) {
-        console.log("¡Adivinaste el número!");
+        mensaje.textContent= "¡Adivinaste el número!";
     } else if (diferencia <= 5) {
         console.log(" ¡Muy caliente!");
     } else if (diferencia <= 15) {
@@ -13,4 +15,3 @@ function adivinar(numeroUsuario) {
         console.log(" Fría");
     }
 }
- console.log("Para jugar: adivinar(#)")
