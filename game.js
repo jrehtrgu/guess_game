@@ -8,7 +8,7 @@ function adivinar() {
     if (diferencia === 0) {
         mensaje.textContent= "¡Adivinaste el número!";
     } else if (diferencia <= 5) {
-        console.log(" ¡Muy caliente!");
+        mensaje.textContent = " ¡Muy caliente!";
     } else if (diferencia <= 15) {
         console.log(" Tibia");
     } else {
