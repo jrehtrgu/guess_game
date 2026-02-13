@@ -10,8 +10,9 @@ function adivinar() {
     } else if (diferencia <= 5) {
         mensaje.textContent = " ¡Muy caliente!";
     } else if (diferencia <= 15) {
-        console.log(" Tibia");
+        mensaje.textContent = " Tibia";
     } else {
-        console.log(" Fría");
+        mensaje.textContent=" Fría";
     }
 }
+
